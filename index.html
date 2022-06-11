@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OWL</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+
+    <div class="video-container">
+        <video id="video" controls>
+            <source src="./videos/Demi Lovato  Anyone.mp4" type="video/mp4">
+        </video>
+        <button id="tenSeconds"><span class="iconify" data-icon="cil:media-skip-backward"></span></button>
+        <button id="play"><span class="iconify" data-icon="cil:media-play"></span></button>
+        <button id="thirtySeconds"><span class="iconify" data-icon="cil:media-skip-forward"></span></button>
+        <button id="fullScreen"><span class="iconify" data-icon="icon-park-outline:full-screen-one"></span></button>
+        <input type="range" id="control" min="0" max="100" step="0.1" value="0">
+    </div>
+
+
+<audio id="audio" src="./music/Adele  Hello.mp3" controls></audio>
+
+
+<script src="./modules/index.js"></script>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 </html>
