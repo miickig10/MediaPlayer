@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(214, 157, 252);
+}
+
+.video-container {
+    position: relative;
+}
+
+button {
+    border-radius: 50px;
+    border-color:rgba(167, 167, 163, 0.404) ;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(245, 245, 220, 0.404);
+}
+
+.iconify{
+    color: #ffff;
+}
+
+#video {
+    width: 50%;
+    margin: 20px;
+    position: relative;
+}
+
+#play {
+    position: absolute;
+    left: 25%;
+    bottom: 45px;
+}
+
+#tenSeconds{
+    position: absolute;
+    left: 22%;
+    bottom: 45px;
+}
+
+#thirtySeconds{
+    position: absolute;
+    left: 28%;
+    bottom: 45px;
+}
+
+#fullScreen {
+    position: absolute;
+    left: 48%;
+    bottom: 45px;
+}
+
+#control {
+    position: absolute;
+    width: 49%;
+    left: 27px;
+    bottom: 34px;
+}
+
+
+input[type=range] {
+    outline: none;
+    height: 3px;
+  }
