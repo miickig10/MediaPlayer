@@ -2,6 +2,7 @@
 // llamamos a los elementos html
 
 const video = document.getElementById("video")
+const videoContainer = document.getElementById("video-container")
 const audio = document.getElementById("audio")
 const play = document.getElementById("play")
 const control = document.getElementById("control")
@@ -9,6 +10,8 @@ const tenSeconds = document.getElementById("tenSeconds")
 const thirtySeconds = document.getElementById("thirtySeconds")
 const fullScreen = document.getElementById("fullScreen")
 let duration;
+
+let onFullScreen = false;
 
 // Remmovemos los controles por defecto
 video.removeAttribute("controls") 
@@ -45,7 +48,15 @@ tenSeconds.onclick = () => {
 // Función para hacer la pantalla completa
 
 fullScreen.onclick = () => {
-    video.requestFullscreen()
+    if (onFullScreen){
+        onFullScreen = false;
+        document.exitFullscreen()
+
+    }else {
+        onFullScreen = true;
+        videoContainer.requestFullscreen()
+    }
+    
 }
 
 

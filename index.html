@@ -9,15 +9,20 @@
 </head>
 <body>
 
-    <div class="video-container">
+    <div id="video-container" class="video-container">
         <video id="video" controls>
             <source src="./videos/Demi Lovato  Anyone.mp4" type="video/mp4">
         </video>
-        <button id="tenSeconds"><span class="iconify" data-icon="cil:media-skip-backward"></span></button>
-        <button id="play"><span class="iconify" data-icon="cil:media-play"></span></button>
-        <button id="thirtySeconds"><span class="iconify" data-icon="cil:media-skip-forward"></span></button>
-        <button id="fullScreen"><span class="iconify" data-icon="icon-park-outline:full-screen-one"></span></button>
-        <input type="range" id="control" min="0" max="100" step="0.1" value="0">
+        <div class="video-buttons">
+            <div>
+                <button id="tenSeconds"><span class="iconify" data-icon="cil:media-skip-backward"></span></button>
+                <button id="play"><span class="iconify" data-icon="cil:media-play"></span></button>
+                <button id="thirtySeconds"><span class="iconify" data-icon="cil:media-skip-forward"></span></button>
+            </div>
+            <button id="fullScreen"><span class="iconify" data-icon="icon-park-outline:full-screen-one"></span></button>
+            <input type="range" id="control" min="0" max="100" step="0.1" value="0">
+        </div>
+        
     </div>
 
 

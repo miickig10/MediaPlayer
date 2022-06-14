@@ -24,41 +24,31 @@ button {
     color: #ffff;
 }
 
-#video {
+.video-container {
     width: 50%;
-    margin: 20px;
+}
+
+#video {
+    width: 100%;
     position: relative;
 }
 
-#play {
+.video-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
     position: absolute;
-    left: 25%;
-    bottom: 45px;
+    background-color: rgba(128, 128, 128, 0.342);
+    bottom: 3px;
+    height: 40px;
+    z-index: 2;
 }
 
-#tenSeconds{
-    position: absolute;
-    left: 22%;
-    bottom: 45px;
-}
-
-#thirtySeconds{
-    position: absolute;
-    left: 28%;
-    bottom: 45px;
-}
-
-#fullScreen {
-    position: absolute;
-    left: 48%;
-    bottom: 45px;
-}
 
 #control {
-    position: absolute;
     width: 49%;
     left: 27px;
-    bottom: 34px;
+ 
 }
 
 
@@ -66,3 +56,9 @@ input[type=range] {
     outline: none;
     height: 3px;
   }
+
+
+
+#video::-webkit-media-controls{
+    display: none;
+}
