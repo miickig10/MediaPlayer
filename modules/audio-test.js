@@ -1,4 +1,4 @@
-const playerButton = document.querySelector('.player-button'),
+/*const playerButton = document.querySelector('.player-button'),
     audio = document.querySelector('audio'),
     playIcon = `
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
@@ -27,4 +27,4 @@ function audioEnded() {
 }
 
 audio.onended = audioEnded;
-const timeline = document.querySelector('.timeline');
+const timeline = document.querySelector('.timeline');*/

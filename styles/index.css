@@ -50,7 +50,7 @@ button#fullScreen {
 .video-buttons {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 40px;
     position: absolute;
     background-color: rgba(128, 128, 128, 0.342);
     bottom: 3px;
