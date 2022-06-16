@@ -1,8 +1,8 @@
-// llamamos a los elementos html
+function videoPlayer (){
+    // llamamos a los elementos html
 
 const video = document.getElementById("video")
 const videoContainer = document.getElementById("video-container")
-const audio = document.getElementById("audio")
 const play = document.getElementById("play")
 const control = document.getElementById("control")
 const tenSeconds = document.getElementById("tenSeconds")
@@ -68,3 +68,8 @@ play.onclick = () => {
         video.pause()
     }
 }
+
+}
+
+
+export default videoPlayer
